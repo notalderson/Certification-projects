@@ -1,0 +1,145 @@
+** start of undefined **
+
+<!DOCTYPE>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>freeCodeCamp Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description">This is part of the certification test for the Responsive Web Design course of freeCodeCamp.org</p>
+    <form id="survey-form">
+     <fieldset>
+       <label>
+      <label for="name" id="name-label">Name <input type="text" id="name" required placeholder="Enter your name"/></label>
+      <label for="email" id="email-label">Email <input type="email" id="email" required placeholder="Enter your email"/></label>
+      <label for="number-label" id="number-label">Age <input type="number" id="number" min="14" max="120" placeholder="Age"/></label>
+     </label>
+    </fieldset> 
+    <fieldset>
+      <label for="dropdown">Which option best describes your current role?</label> 
+       <select id="dropdown"> 
+        <option value="">(select one)</option>
+        <option value="1">Student</option>
+        <option value="2">Full Time Job</option>
+        <option value="3">Full Time Learner</option>
+        <option value="4">Prefer Not To Say</option>
+        <option value="5">Other</option>
+       </select>
+      <label>Would you reccomend freeCodeCamp?
+       <label for="of-course"><input type="radio" name="recommendation" id="of-course" value="1" class="inline" checked /> Of Course</label>
+       <label for="maybe"><input type="radio" name="recommendation" id="maybe" value="2" class="inline" /> Maybe</label>
+       <label for="not-sure"><input type="radio" name="recommendation" id="not-sure" value="3" class="inline" /> Not Sure</label>
+      </label>
+    </fieldset>
+    <fieldset>
+      <label for="dropdown">What is your favorite feature of freeCodeCamp?</label>
+      <select id="dropdown">
+        <option value="">Select an option</option>
+        <option value="1">Challenges</option>
+        <option value="2">Projects</option>
+        <option value="3">Community</option>
+        <option value="4">Open Source</option>
+      </select>
+      <label><input type="checkbox" name="front-end" value="1" class="checkbox" />Front-end Projects</label>
+      <label><input type="checkbox" name="back-end" value="2" class="checkbox" />Back-end Projects</label>
+      <label><input type="checkbox" name="data-visualization" value="3" class="checkbox" />Data Visualization</label>
+      <label><input type="checkbox" name="challenges" value="4" class="checkbox" />Challenges</label>
+      <label><input type="checkbox" name="open-source-comm" value="5" class="checkbox" />Open Source Community</label>
+      <label><input type="checkbox" name="help-room" value="6" class="checkbox" />Gitter help room</label>
+      <label><input type="checkbox" name="videos" value="7" class="checkbox" />Videos</label>
+      <label><input type="checkbox" name="meetups" value="8" class="checkbox" />City Meetups</label>
+      <label><input type="checkbox" name="wiki" value="9" class="checkbox" />Wiki</label>
+     <label><input type="checkbox" name="forum" value="10" class="checkbox" />Forum</label>
+      <label><input type="checkbox" name="adittional-courses" value="11" class="checkbox"/> Additional Courses</label>
+    </fieldset>
+    <fieldset>
+      <legend>Any comments or suggestions?</legend>
+        <textarea rows="5" cols="50"></textarea>
+    </fildset>
+    <input type="submit" value="Submit" id="submit" />
+   </form>
+  </body>
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+
+
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  background-color: #003049;
+  color: #eae2b7;
+  font-family: Calibri;
+  font-size: 18px;
+}
+
+h1[id="title"] {
+  color: #ffb703
+}
+
+form {
+  width: 60vw;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding-bottom: 2em;
+}
+
+h1, p {
+  margin: 1em auto;
+  text-align: center;
+}
+
+fieldset {
+  border: none;
+  padding: 2rem 0;
+  border-bottom: 3px solid #f77f00;
+}
+
+fieldset:last-of-type {
+  border-bottom: none;
+}
+
+label {
+  display: block;
+  margin: 0.5rem 0;
+  width: 100%
+}
+
+input, textarea, select {
+  margin: 10px 0 0 0;
+  width: 100%;
+  min-height: 2em;
+}
+
+input, textarea {
+  background-color: #eae2b7;
+  border: 1px solid #f77f00;
+  color: #003049
+}
+
+.inline {
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+  display: inline;
+}
+
+.checkbox {
+  width: unset;
+  margin: 0 0.5 0 0;
+  vertical-align: middle;
+  display: inline
+}
+
+
+
+** end of undefined **
+
